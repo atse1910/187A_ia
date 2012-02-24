@@ -663,9 +663,8 @@ input[type="file"]:focus, input[type="checkbox"]:focus, select:focus {
   width: 60px;
 }
 .input-small {
-  width: 200px;
+  width: 150px;
 }
-/* The above controls the search bar size.*/
 .input-medium {
   width: 150px;
 }
@@ -2337,13 +2336,19 @@ button.btn.small, input[type="submit"].btn.small {
 .navbar-inner {
   padding-left: 20px;
   padding-right: 20px;
-  background-color: transparent;
-
+  background-color: #2c2c2c;
+  background-image: -moz-linear-gradient(top, #cf0000, #cf0000);
+  background-image: -ms-linear-gradient(top, #cf0000, #cf0000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cf0000), to(#cf0000));
+  background-image: -webkit-linear-gradient(top, #cf0000, #cf0000);
+  background-image: -o-linear-gradient(top, #cf0000, #cf0000);
+  background-image: linear-gradient(top, #cf0000, #cf0000);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf0000', endColorstr='#cf0000', GradientType=0);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
-/*
-The above controls the navigation bar's color and other other properties.
-
-*/
 .btn-navbar {
   display: none;
   float: right;
