@@ -1,0 +1,55 @@
+#nav ul ul li a:link, #nav ul ul li a:visited{
+	border-left: solid white 1px;
+	border-right: solid white 1px;
+	border-bottom: dotted #FFFFFF 1px;
+	}
+
+#nav li li a {
+	clear:both;
+	border-left: solid white 1px;
+	border-right: solid white 1px;
+	border-bottom: dotted #FFFFFF 1px; 	
+}
+#nav li li a:link, #nav li li a:visited{ /* Master Controls of Sub Menu Color, Size and Font */
+	width:150px;
+	float:none;
+	margin:0;
+	padding:7px 10px;
+	font-size:12px;
+	font-weight:normal;
+	color: white;
+	background-color: #991e21;
+	border-left: solid white 1px;
+	border-right: solid white 1px;
+	border-bottom: dotted #FFFFFF 1px;
+	}
+	
+#nav li li a:hover{
+	color:#982216;
+	background-color:#F8F8F8;
+	}
+
+#nav ul li ul{
+	z-index:9999;
+	position:absolute;
+	left:-999em;
+	height:auto;
+	width:170px;
+	
+	}
+.navsubborder {
+	border-bottom: dotted 1px white;
+	clear: both;
+}
+	
+/* Master Control for Sub Menu Border Size */
+
+
+
+#nav ul ul a{width:140px;}
+
+#nav li:hover ul{left:auto;}
+
+#nav li:hover{position:static;}
+
+#nav li.last{margin-right:0;}

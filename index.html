@@ -1,266 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Home | University of Louisiana , Lafayette</title>
-        <meta name="description" content="Our redesign of louisiana.edu">
-        <meta name="author" content="Created by Dylan Barth, Marie Sbrocca, and Andy Tse.">
+<head>
+<meta charset="utf-8">
+<title>Home | University of Louisiana at Lafayette</title>
+<meta name="description" content="Our redesign of louisiana.edu">
+<meta name="author" content="Created by Dylan Barth, Marie Sbrocca, and Andy Tse.">
 
-        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+<!-- Your Stylesheets -->
+<link rel="stylesheet" href="mainstylesheet.css">
+</head>
 
-        <!-- Base Stylsheets http://twitter.github.com/bootstrap/ -->
-        <link rel="stylesheet" href="stylesheets/lib/bootstrap.css">
-        <link rel="stylesheet" href="stylesheets/lib/jquery.fancybox.css" >
-
-
-        <!-- Your Stylesheets -->
-        <link rel="stylesheet" href="stylesheets/main.css" >
-
-        <!-- Google Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Voces' rel='stylesheet' type='text/css'>
-
-
-        <!--  jQuery http://jquery.com/ -->
-        <script src="javascripts/lib/jquery-1.7.1.min.js"></script>
-
-        <!-- Bootstrap Javascripts http://twitter.github.com/bootstrap/javascript.html -->
-        <script src="javascripts/lib/bootstrap.js"></script>
-        <script src="javascripts/lib/bootstrap-dropdown.js"></script>
-        <script src="javascripts/lib/bootstrap-carousel.js"></script>
-
-
-        <!-- Fancybox Lightbox http://fancyapps.com/fancybox/#examples -->
-        <script src="javascripts/lib/jquery.fancybox.js"></script>
-
-
-        <!-- Your Javascripts -->
-        <script src="javascripts/main.js"></script>
-        <script type="text/javascript">
-            $('.nav').dropdown()
-        </script>
-        <script type="text/javasript">
-            $('#myCarousel').carousel({
-            interval: 500
-            })
-        </script>
-    </head>
-
-    <body>
-        <div class="container">
-
-            <!--banner-->
-            <div class="row">
-                <div class="span16">
-                     	<div style="float:left;" class="span10">
-                    
-                    		<a href="index.html"><img id="banner" src="images/banner2.png" alt="University of Lousisiana at Lafayatte"/></a>
-                    	</div>
-                    <div style="float:right;">
-                    <form class="form-inline" id="push_form_right">
-                        <input type="text" class="input-small" placeholder="Search...">
-                        <button type="submit" class="btn">Go!</button>
-                    </form>
-                    </div>
+<body id="home">
+<!--University Header Copy start here -->
+<!--Banner Header Begins Here -->
+    <div id="banner1" class="clr">
+        <div id="banner2">
+          <h1> 
+          <a href="index.html" title="Home"> University of Louisiana at Lafayette</a> 
+          </h1>
+              <!-- utility navigation begins here -->
+        
+            <ul id="utility" class="clr">
+            <li><a href="#">Directories</a></li>
+            <li><a href="https://portal.louisiana.edu:8443/uPortal/">ULink Sign In</a></li>
+            <li><a href="#">Maps</a></li>
+            <li><a href="#">WebPortal</a></li>
+            <li><a href="#">Make a Gift</a></li>
+            </ul>
+            <div id="sitesearch">
+           
+            <form class="gs" method="get" action="http://www.louisiana.edu/AboutUs/search_results.shtml">
+                <div>
+                   <input name="searchForm" id="searchtext" class="placeholder" placeholder="Search ULL" type="search">
+                  <button type="submit" class="btn">Go!</button>
+                   
                 </div>
+                </form>
             </div>
+        </div>
+    </div>
 
- <!--navigation-->
-            <div class="row">
-                <div class="span12" id="navigation">
-                    <div class="navbar">
-                        <div class="navbar-inner">
-                            <div class="container">
-                                <ul class="nav" id="custom_nav">
+<!--Navigiaton Bar Begins Here-->
+<div id="nav" class="clr dropdown">
 
-                                    <li class="dropdown" data-dropdown="dropdown">
-                                        <a class="dropdown-toggle" href="#">
-                                            About
-                                            <b class="caret"></b>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Facts</a></li>
-                                            <li><a href="#">Visiting</a></li>
-                                            <li><a href="#">News</a></li>
-                                            <li><a href="#">History</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown" data-dropdown="dropdown">
-                                        <a class="dropdown-toggle" href="#">
-                                            Gateways
-                                            <b class="caret"></b>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Current Students</a></li>
-                                            <li><a href="#">Prospective Students</a></li>
-                                            <li><a href="#">Faculty &AMP; Staff</a></li>
-                                            <li><a href="#">Alumni</a></li>
-                                            <li><a href="#">Parents</a></li>
-                                            <li><a href="#">Visitors</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown" data-dropdown="dropdown">
-                                        <a class="dropdown-toggle" href="#">
-                                            Athletics
-                                            <b class="caret"></b>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Division 1 Sports</a></li>
-                                            <li><a href="#">Club Sports</a></li>
-                                            <li><a href="#">Intramural Sports</a></li>
-                                            <li><a href="#">Athletic Network</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown" data-dropdown="dropdown">
-                                        <a class="dropdown-toggle" href="#">
-                                            Academics
-                                            <b class="caret"></b>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Departments</a></li>
-                                            <li><a href="#">Undergraduate</a></li>
-                                            <li><a href="#">Graduate</a></li>
-                                            <li><a href="#">Research</a></li>
-                                            <li><a href="#">Courses Offered</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown" data-dropdown="dropdown">
-                                        <a class="dropdown-toggle" href="#">
-                                            Resources
-                                            <b class="caret"></b>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Contact Us</a></li>
-                                            <li><a href="#">Help</a></li>
-                                            <li><a href="#">Schedule of Classes</a></li>
-                                            <li><a href="#">Quick Links</a></li>
-                                        </ul>
-                                    </li>
+    <ul>
+        <li id="navhome"><a href="index.html" title="Home">Home</a></li>
+        
+        <li id="navabout"><a href="#">About</a>
+        
+            <ul>
+             <li class="navsubborder"><a href="#">History</a></li>
+             <li class="navsubborder"><a href="#">Facts</a></li>
+			 <li class="navsubborder"><a href="#">Visiting</a></li>
+			 <li class="navsubborder"><a href="#">News</a></li>
+			 <li class="navsubborder"><a href="#">Accreditation</a></li>
+             <li class="navsubborder"><a href="#">Careers</a></li>
+            </ul>        
+        </li>
+        <li id="navprospective"><a href="#">Prospective Students</a>
+        
+            <ul>
+            <li class="navsubborder"><a href="#">Freshman</a></li>
+           	<li class="navsubborder"><a href="#">Out-of-State Applicants</a></li>
+			<li class="navsubborder"><a href="#">Graduate School</a></li>
+			<li class="navsubborder"><a href="#">International Students</a></li>
+			<li class="navsubborder"><a href="#">Transfer</a></li>
+            <li class="navsubborder"><a href="#">Counselors</a></li>
+			<li class="navsubborder"><a href="#">Campus Tours</a></li>
+    		</ul>
+         </li>   
+        <li id="navcurrent"><a href="#">Current Students</a>
+           
+            <ul>
+            <li class="navsubborder"><a href="#">ULink</a></li>
+			<li class="navsubborder"><a href="#">Financial Aid</a></li>
+			<li class="navsubborder"><a href="#">Schedule of Classes</a></li>
+			<li class="navsubborder"><a href="#">Catalogue</a></li>
+            <li class="navsubborder"><a href="#">Student Life</a></li>
+    		
+            </ul>        
+</li>
+        <li id="navacademics"><a href="#">Academics</a>
+            
+            <ul>
+            <li class="navsubborder"><a href="#">Research</a></li>
+			<li class="navsubborder"><a href="#">Departments</a></li>
+			<li class="navsubborder"><a href="#">Libraries</a></li>
+			<li class="navsubborder"><a href="#">Advising</a></li>
+            <li class="navsubborder"><a href="#">Campus Services</a>
+    		
+            </ul>    
+            </li>    
+        <li id="navfaculty"><a href="#">Staff and Faculty</a>
+            <ul>
+           
+			<li class="navsubborder"><a href="#">Facilities and Services</a></li>
+			<li class="navsubborder"><a href="#">Technology</a></li>
+			<li class="navsubborder"><a href="#">Faculty Resources</a></li>
+			<li class="navsubborder"><a href="#">Travel</a></li>
+			<li class="navsubborder"><a href="#">Human Resources</a></li>
+			<li class="navsubborder"><a href="#">Safety</a></li>
+			<li class="navsubborder"><a href="#">Buy and Pay</a></li>
+                		
+            </ul>     
+            </li>   
+        <li id="navalumni"><a href="#">Alumni &amp; Friends</a>
+            <ul>
+            <li class="navsubborder"><a href="#">Contribute</a></li>
+			<li class="navsubborder"><a href="#">Connect</a></li>
+            <li class="navsubborder"><a href="#">Participate</a></li>
+            <li class="navsubborder"><a href="#">Alumni Network</a></li>
+            <li class="navsubborder"><a href="#">Hire ULL Talent</a></li>
+            
+    		</ul>
+        </li>
+        <li id="navsports"><a href="#">Athletics</a>
+            <ul>
+            <li class="navsubborder"><a href="#">Recreation</a></li>
+            <li class="navsubborder"><a href="#">Intercollegiate Sports</a></li>
+			<li class="navsubborder"><a href="#">Intramural Sports</a></li>
+			<li class="navsubborder"><a href="#">Schedules of Events</a></li>
+			
+           
+    		</ul>    
+             </li>    
+        <li id="navweather" title="Current Weather Conditions">
+         <a href="#">
+        	 <img src="images/sun.png" alt="Current Weather Conditions" class="weathericon" style="left: -22px; top: -5px; position: relative;" /> 
+          </a>
+                 <span style="position:relative; top: -23px; left: 35px; font-size:10pt;">
+                 57 &deg; F
+                 </span>
+             
+          
+           
+           </li>
+         
+       
+        
 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-            <!--content-->
+        
+    
+        
+        
+    </ul>
+</div> 
+<!--Navigiaton Bar Ends Here-->
+<div id="container">
 
 
-            <!-- Image Gallery -->
-            <div class="row" id="content">
-                <div class="span12" id="front_gallery">
 
-                    <!-- This is where the carousel is right now -->
 
-                    <div id="myCarousel" class="carousel">
-                        <!-- Carousel items -->
-                        <div class="carousel-inner">
-                            <!--Note: images need to be between 900-940 probably looks best if they are around 920 px-->
-                            <div class="active item">
-                                <img class="gallery_image" src="images/slideshow/walkOfHonor.png" alt=""/>
-                                <div class="carousel-caption">
-                                    <h4>The Walk of Honor</h4>
-                                    <p>Beginning on the south side of Martin Hall and encircling the Quadthe, the Walk of Honor is paved with bricks bearing the names of all UL Lafayette graduates arranged by class year.</p>
-                                    <p>Image 1 of 3</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="gallery_image" src="images/slideshow/library.jpg" alt=""/>
-                                <div class="carousel-caption">
-                                    <h4>Dupre Library</h4>
-                                    <p>The exterior may seem slightly familiar, but once you enter, you won’t recognize the place. It’s magnificent.</p>
-                                    <p>Image 2 of 3</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="gallery_image" src="images/slideshow/fanDay.png" alt=""/>
-                                <div class="carousel-caption">
-                                    <h4>Rajun Cajun Baseball Hosts Fan Day</h4>
-                                    <p>The Ragin’ Cajuns baseball team hosted its annual Fan Day festivities on Saturday, Feb. 11 at M.L. “Tigue” Moore Field.</p>
-                                    <p>Image 3 of 3</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Carousel nav -->
-                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                    </div>
+</div>
 
-                    <!-- End of the carousel -->
-                </div>
-            </div>
-            <!-- News Content -->
-            <div class="row">
-                <div class="span12">
-                    <h1 class="voces" id ="news_header">The latest news from Cajun Country:</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="span4">
-                    <h2 class="voces">Picard Center Opens In University Research Park</h2>
-                    <p>Gov. Bobby Jindal joined statewide elected officials, school administrators and special guests for the opening the new home of the Cecil J. Picard Center for Child Development and Lifelong Learning in the University of Louisiana at Lafayette’s Research Park.</p>
-                    <p>Briefly reviewing his education reform plan for the upcoming legislative session, Gov. Jindal also mentioned the Picard Center as a key component in his plan with its competency of high-quality research on children from birth into the workforce.</p>
-                    <a href="#">Read More...</a>
-                </div>
-                <div class="span4">
-                    <h2 class="voces">Gateway to Lafayette Nears Completion</h2>
-                    <p>A project to improve one of the Lafayette’s primary gateways is beginning its final phase. Painting the fourth and final mural at the University Avenue and Interstate 10 interchange has begun thanks to the artistic contribution of Robert Dafford and Dafford Murals. The mural is scheduled for completion by the end of this month.</p>
-                    <p>Under the leadership of the Upper Lafayette Economic Development Foundation and its director, Jan Swift, many entities have joined forces to clean up and revitalize the "Gateway to...</p>
-                    <a href="#">Read More...</a>
-                </div>
-                <div class="span4">
-                    <h2 class="voces">Marching Band Gets Uniform Makeover</h2>
-                    <p>The Pride of Acadiana Marching Band will have a new look in time for the upcoming football season. </p>
-                    <p>The band held a contest that allowed fans to vote for their favorite design among three final uniforms. After more than 5,200 votes, fans selected the first design as the favorite.</p>
-                    <p>Voting ended Feb. 13. </p>
-                    <p>Band Director Brian Taylor said hats and color guard uniforms will be designed to match the band uniforms. "Now, we start on those designs and customize the band uniform," he said.</p>
-                </div>
-            </div>
 
-            <!--footer-->
-            <div class="row">
-                <div class="span12" id="footer">
-                    <p>University of Louisiana at Lafayette site redesign, created by Dylan Barth, Marie Sbrocca, and Andy Tse</p>
-                </div>
-            </div>
+<div id="footerrow">
+	<div class="footersubrow">
+        <div id="footer">
+        <ul id="social">
+        <li id="fb"><a href="http://www.facebook.com/uchicago/" title="Facebook">Facebook</a></li>
+        <li id="tw"><a href="http://twitter.com/UChicago/" title="Twitter">Twitter</a></li>
+        <li id="yt"><a href="http://www.youtube.com/UChicago" title="YouTube">YouTube</a></li>
+        <li id="itu"><a href="http://deimos.apple.com/WebObjects/Core.woa/Browse/uchicago-public" title="iTunes U">iTunes U</a></li>
+        <li id="fut"><a href="http://futurity.org/tag/university-of-chicago/" title="Futurity">Futurity</a></li>
+        <li id="rss"><a href="http://www.uchicago.edu/feeds/" title="RSS Feeds">RSS Feeds</a></li>
+        </ul>
+        </div>
+    </div>
+    
+    <div class="footersubrow">
+    <div id="footerauthor">
 
-        </div> <!-- end container -->
+        <p>Information Architecture Project by Andy Tse &copy; Winter Quarter 2012. University of California at San Diego. COGS 187A.</p>
+        
+        <p> Navigation for Information Architecture Project: 
+        
+        <a href="/deliverable1/userscenario.html">User Personas and Scenarios </a>|| 
+        <a href="/deliverable2/analysis.html">Competitive Analysis</a> || 
+        <a href="/deliverable3/wireframe.html">Wireframes </a> || 
+        <a href="index.html">Redesign </a>|| </p>
+        </div>
+        </div>
+</div>
 
-    </body>
-</html>
+
+</body>
