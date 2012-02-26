@@ -10,7 +10,7 @@
 	border-right: solid white 1px;
 	border-bottom: dotted #FFFFFF 1px; 	
 }
-#nav li li a:link, #nav li li a:visited{ /* Master Controls of Sub Menu Color, Size and Font */
+#nav li li a:link, #nav li li a:visited{ /* Master Controls of Sub Menu Color, Size and Font  NON-HOVER*/
 	width:150px;
 	float:none;
 	margin:0;
@@ -19,14 +19,15 @@
 	font-weight:normal;
 	color: white;
 	background-color: #991e21;
-	border-left: solid white 1px;
-	border-right: solid white 1px;
+
 	border-bottom: dotted #FFFFFF 1px;
+	text-align: left;
 	}
 	
 #nav li li a:hover{
 	color:#982216;
 	background-color:#F8F8F8;
+	border-right: solid 1px #990000;
 	}
 
 #nav ul li ul{
@@ -40,7 +41,14 @@
 .navsubborder {
 	border-bottom: dotted 1px white;
 	clear: both;
+	text-align: left;
 }
+.navsubborder a:hover{
+	border-bottom: solid 1px maroon;
+	clear: both;
+	text-align: left;
+}
+	
 	
 /* Master Control for Sub Menu Border Size */
 
@@ -53,3 +61,5 @@
 #nav li:hover{position:static;}
 
 #nav li.last{margin-right:0;}
+
+
