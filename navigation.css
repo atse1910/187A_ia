@@ -62,4 +62,7 @@
 
 #nav li.last{margin-right:0;}
 
+weathertext{ position:relative; top: -23px; left: 35px; font-size:10pt;}
+
+weathericon{ left: -22px; top: -5px; position: relative;}
 
