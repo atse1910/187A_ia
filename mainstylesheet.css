@@ -3,6 +3,7 @@
 
 @import url(navigation.css);
 @import url(content.css);
+@import url(footer.css);
 
 body {
   margin: 0;
@@ -13,7 +14,7 @@ body {
 }
 
 a, .module a h4 {color:#155f83;text-decoration:none;-webkit-transition:color 0.3s ease-in;-moz-transition:color 0.3s ease-in;-o-transition:color 0.3s ease-in;transition:color 0.3s ease-in;}
-a:hover, a:focus, .module a:hover h4, .module a:focus h4 {color:#20364c;text-decoration:underline;-webkit-transition:color 0.3s ease-out;-moz-transition:color 0.3s ease-out;-o-transition:color 0.3s ease-out;transition:color 0.3s ease-out;}
+a:hover, a:focus, .module a:hover h4, .module a:focus h4 {color:#20364c; text-decoration:underline;-webkit-transition:color 0.3s ease-out;-moz-transition:color 0.3s ease-out;-o-transition:color 0.3s ease-out;transition:color 0.3s ease-out;}
 
 #popularsearch a:hover, #popularsearch a:focus, #footer a:hover, #footer a:focus {color:#fff;}
 html, body {height:100%;}
@@ -257,106 +258,49 @@ body#parents #navparents a,body#alumni #navalumni a {
 
 
 
-/*-- Footer */
-#footerrow {
-	border-top:4px solid #6c0c0c;
-	background: #CCC;
-	background-image:-moz-linear-gradient(top, #51504b, #676760 7%); /* FF3.6 */
-	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0, #51504b),color-stop(.07, #676760)); /* Saf4+, Chrome */
-	background-image:gradient(linear,left top,left bottom,color-stop(0, #51504b),color-stop(.07, #676760));
-	clear:both;
-	height:100px;
-	width:100%;
-	position:relative; 
-	margin-top:-55px;
-	z-index: 4;
-	clear: both;
-}
-
-#footer {
-	background:#5c5c56;
-	background-image:-moz-linear-gradient(top, #54544f, #6b6b65 7%); /* FF3.6 */
-	background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0, #54544f),color-stop(.07, #6b6b65)); /* Saf4+, Chrome */
-	background-image:gradient(linear,left top,left bottom,color-stop(0, #54544f),color-stop(.07, #6b6b65));
-	height:100px;
-	margin:0 auto;
-	width:960px;
-		clear: both;
-}
-
-#footer a,#footer ul {
- color: white;
- 
-}
-
-#footerauthor {
-	border-top: dashed 3px black;
-	display: block;
-	background: #333;
-	clear: both;
-	border-radius: 4px;
-	text-align:center;
-	line-height: 10pt;
-	margin-left: auto;
-	margin-right: auto;
-	word-wrap:break-word;
-	padding-bottom: 4px;
-}
-
-.footersubrow {
-	height: 100px;
-	margin-left: auto;
-	margin-right:auto;	
-	width: 960px;
-	
-
-}
-
-
 .begin {
 top: 50px;	
 color: black;
 margin-left: 30px;
 }
 
-
-ul#social {height:16px; list-style-type:none }
-ul#social li a {
-	background-image:url(images/icon.png);
-	background-repeat:no-repeat;
-	display:block;
-	height:16px;
-	width:16px;
-	overflow:hidden;
-	text-indent:-999em;
-	list-style: none;
-	float: left;
-
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/ProximaNova-Reg-webfont.eot');
+	src: url('fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/ProximaNova-Reg-webfont.woff') format('woff'),
+		   url('fonts/ProximaNova-Reg-webfont.ttf') format('truetype'),
+		   url('fonts/ProximaNova-Reg-webfont.svg#ProximaNovaRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
-
-#yt a {background-position:0 -1px; }
-#fb a {background-position:-16px -1px;}
-#tw a {background-position:-32px -1px; }
-#fut a {background-position:-48px -1px; }
-#itu a {background-position:-64px -1px; }
-#rss a {background-position:-80px -1px; }
-#mob a {background-position:-96px -1px; }
-#yt a:hover, #yt a:focus {background-position:0 -17px;}
-#fb a:hover, #fb a:focus {background-position:-16px -17px;}
-#tw a:hover, #tw a:focus {background-position:-32px -17px;}
-#fut a:hover, #fut a:focus {background-position:-48px -17px;}
-#itu a:hover, #itu a:focus {background-position:-64px -17px;}
-#rss a:hover, #rss a:focus {background-position:-80px -17px;}
-#mob a:hover, #mob	 a:focus {background-position:-96px -17px;}
-
-#footer p,#footer ul {
-	display:block;
-	float:left;
-	font-size:1em;
-	line-height:200%;
-	margin:10px 0 0 16px;
-	width:255px;
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/ProximaNova-RegIt-webfont.eot');
+	src: url('fonts/ProximaNova-RegIt-webfont.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/ProximaNova-RegIt-webfont.woff') format('woff'),
+		   url('fonts/ProximaNova-RegIt-webfont.ttf') format('truetype'),
+		   url('fonts/ProximaNova-RegIt-webfont.svg#ProximaNovaRegularItalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
 }
-
-#footer p, #footer li, #footer a {color:#bebeb6;}
-#footer a {text-decoration:underline;}
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/ProximaNova-Bold-webfont.eot');
+	src: url('fonts/ProximaNova-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/ProximaNova-Bold-webfont.woff') format('woff'),
+		   url('fonts/ProximaNova-Bold-webfont.ttf') format('truetype'),
+		   url('fonts/ProximaNova-Bold-webfont.svg#ProximaNovaBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/ProximaNova-BoldIt-webfont.eot');
+	src: url('fonts/ProximaNova-BoldIt-webfont.eot?#iefix') format('embedded-opentype'),
+		   url('fonts/ProximaNova-BoldIt-webfont.woff') format('woff'),
+		   url('fonts/ProximaNova-BoldIt-webfont.ttf') format('truetype'),
+		   url('fonts/ProximaNova-BoldIt-webfont.svg#ProximaNovaBoldItalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}

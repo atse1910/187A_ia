@@ -66,3 +66,11 @@ weathertext{ position:relative; top: -23px; left: 35px; font-size:10pt;}
 
 weathericon{ left: -22px; top: -5px; position: relative;}
 
+#search input#go{
+	display:block;
+	float:right;
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:4px;
+	}
