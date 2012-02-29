@@ -100,10 +100,9 @@
 .social ul {
 	height: 32px;
 	margin-bottom: 40px;
-	
 }
 .social li {
-	display: block; 
+	display: block;
 }
 .social li a {
 	display: block;
@@ -112,7 +111,7 @@
 	margin: 0 12px 0 0;
 	float: left;
 	text-indent: -9999px;
-background: transparent url(images/facebook.png) 0 0 no-repeat;
+	background: transparent url(images/facebook.png) 0 0 no-repeat;
 	opacity: .8;
 }
 .social a:hover, .social a:focus {
@@ -137,4 +136,44 @@ background: transparent url(images/facebook.png) 0 0 no-repeat;
 	line-height: 24px;
 	background: transparent url(../images/mobile-icon.png) 0 0 no-repeat;
 	float: left;
+}
+.footerrow01 {
+	width:960;
+	display: inline-block;
+	margin-left: 18px;
+}
+.footercol01 {
+	width: 280px;
+	margin-left: 12px;
+	margin-top: 2px;
+	display: block;
+	float:left;
+	overflow: hidden;
+}
+.footercol2 {
+	width: 220px;
+	margin-left: -10px;
+	margin-top: 2px;
+	display: block;
+	float:left;
+	overflow: hidden;
+}
+.footercol3 {
+	width: 220px;
+	margin-left: 0px;
+	margin-top: 2px;
+	display: block;
+	float:left;
+	overflow: hidden;
+}
+.footercol4 {
+	width: 180px;
+	margin-left: 5px;
+	margin-top: 2px;
+	display: block;
+	float:left;
+	overflow: hidden;
+}
+.valign {
+	vertical-align: bottom;
 }

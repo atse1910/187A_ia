@@ -30,7 +30,6 @@
 	min-height: 200px;
 	overflow:hidden;
 }
-
 .column2 {
 	width: 660px;
 	padding: 0px 0px 10px 0px; /* top right bottm left */
@@ -49,14 +48,13 @@
 	min-height: 200px;
 	overflow:hidden;
 }
-.columnarticle {
-	width: 270px;
+.upcoming {
+	width: 225px;
 	padding: 4px 20px 10px 4px;
 	display: inline-block;
 	position:relative;
 	vertical-align: top;
 	text-align:justify;
-	overflow:hidden;
 }
 .content1 {
 	width: 690px;
@@ -97,9 +95,11 @@ h2.newstitle {
 	text-align: left;
 	word-wrap:break-word;
 }
-
 .news img {
-	margin-top: 20px;	
+	margin-top: 20px;
+}
+.news img:hover {
+	opacity: .8;
 }
 .author {
 	color: white;
@@ -129,11 +129,7 @@ h2.newstitle {
 	margin-left: 2px;
 }
 .news {
-	background: url(images/tableborder1.png) repeat-x top;
-	-moz-border-image:url(tableborder1.png) 30 30 round; /* Firefox */
-	-webkit-border-image:url(tableborder1.png) 30 30 round; /* Safari and Chrome */
-	-o-border-image:url(tableborder1.png) 30 30 round; /* Opera */
-	border-image:url(tablerborder1.png) 30 30 round;
+	overflow: visible;
 }
 /* Rotator Code and Module Coding */
 #rotator {
@@ -181,7 +177,6 @@ background: #ddd9be; /* Firefox */
 	width: inherit;
 	margin:10px auto 5px;
 	letter-spacing: 0;
-
 }
 .module h2 a:hover {
 	color:#500;
@@ -189,18 +184,14 @@ background: #ddd9be; /* Firefox */
 .module p, .module ul {
 	line-height:1.4;
 	width: inherit;
-	list-style-type: none; 
-	
+	list-style-type: none;
 }
-
 .module .read a:hover {
 	color:#ddd;
 }
-
 .modulebackground {
 	background-color: #454545;
 }
-
 .explore h2 {
 	position: relative;
 	width: inherit;
@@ -233,8 +224,6 @@ background: #ddd9be; /* Firefox */
 	border-color: maroon transparent transparent transparent;
 	bottom: -100px;
 }
-
-
 .explore h2 a, .explore h2 a:hover {
 	color:#fff;
 	display:block;
@@ -247,7 +236,7 @@ background: #ddd9be; /* Firefox */
 	color:#fff;
 	border-top:1px solid #525252;
 	padding:0;
-	left: -30px; 
+	left: -30px;
 	position: relative;
 }
 .explore li:first-child {
@@ -286,5 +275,280 @@ background: #ddd9be; /* Firefox */
 	background-position:0 bottom;
 }
 .center {
-text-align: center;
+	text-align: center;
+}
+.banner {
+	padding-left: 10px;
+}
+.highlight {
+	width: 640px;
+	padding: 4px 20px 10px 4px;
+	display: inline-block;
+	position:relative;
+	vertical-align: top;
+	text-align:justify;
+}
+#affiliates ul {
+	display:block;
+	width:452px;
+	height:112px;
+	list-style-type:none;
+	background:transparent url(images/affiliates.jpg) 0 0 no-repeat;
+}
+#affiliates ul li {
+	list-style:none;
+	float:left;
+}
+#affiliates ul li a {
+	display:block;
+	padding:0 10px 10px 10px;
+	color:#fff;
+	text-transform:uppercase;
+	letter-spacing:.1em;
+	-webkit-transition:background 0.5s ease-in;
+	-moz-transition:background 0.5s ease-in;
+	-o-transition:background 0.5s ease-in;
+	transition:background 0.5s ease-in;
+}
+#affiliates ul li a:hover span, #affiliates ul li a:focus span {
+	position:relative;
+	zoom:1;
+	z-index:9;
+}
+#affiliates ul li a:hover span em, #affiliates ul li a:focus span em {
+	position:absolute;
+	top:-1px;
+	left:-1px;
+	z-index:10;
+	color:#000; /* Color of the text? */
+	font-style:normal;
+}
+#affiliates ul li#lib a, #affiliates ul li#med a {
+	font: 8pt 'ProximaNova-Semibold', 'Helvetica Neue', Helvetica, Arial, sans-serif, bold;
+	-moz-font-feature-settings:'liga=0';
+}
+#affiliates ul li#fermi a, #affiliates ul li#anl a, #affiliates ul li#press a, #affiliates ul li#ctr a {
+	font: 8pt 'ProximaNova-Semibold', 'Helvetica Neue', Helvetica, Arial, sans-serif, bold;
+	-moz-font-feature-settings:'liga=0';
+}
+#affiliates ul li a:hover, #affiliates ul li a:focus {
+	text-decoration:none;
+	background:transparent!important;
+	-webkit-transition:background 0.5s ease-out;
+	-moz-transition:background 0.5s ease-out;
+	-o-transition:background 0.5s ease-out;
+	transition:background 0.5s ease-out;
+	text-shadow:0 0 2px #000, 0 0 4px #000, 0 0 6px #000, 0 0 8px #000;
+}
+#affiliates ul li#lib {
+	height:57px;
+	width:225px;
+	float:left;
+	margin-right:1px;
+}
+#affiliates ul li#lib a {
+	height:13px;
+	width:131px;
+	text-align:right;
+	padding:34px 10px 10px 0;
+	margin-left:44px;
+	background:#8A9D45;
+	float:none;
+}
+#affiliates ul li#med {
+	height:57px;
+	width:226px;
+	float:left;
+}
+#affiliates ul li#med a {
+	height:13px;
+	width:131px;
+	padding:34px 0 10px 10px;
+	background:#155f83;
+	margin-left: -40px;
+	float:none;
+}
+#affiliates ul li#fermi a {
+	height:12px;
+	width:92px;
+	padding-top:32px;
+	margin-top:1px;
+	margin-right: -50px;
+	background:#350e20;
+}
+#affiliates ul li#anl a {
+	height:12px;
+	width:92px;
+	padding-top:32px;
+	margin-top:1px;
+	margin-right:1px;
+	background:#c16622;
+}
+#affiliates ul li#press a {
+	height:12px;
+	width:93px;
+	padding-top:32px;
+	margin-top:1px;
+	margin-right:1px;
+	background:#58593f;
+}
+#affiliates ul li#ctr a {
+	height:25px;
+	width:92px;
+	padding-top:19px;
+	margin-top:1px;
+	background:#767676;
+}
+.box1 {
+	display:inline-block;
+	padding-top:20px;
+	text-align: left;
+}
+.border {
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:1px dotted rgb(156,31,46);
+}
+.box1 a {
+	color: black;
+	font:  Arial, sans-serif;
+	clear:both;
+	font-weight:900;
+	font-style: normal;
+	font-size: 8pt;
+}
+.box1 small {
+	font-style:italic;
+}
+.box1 p {
+	font-family:"ProximaNova", "Helvetica Neue", Arial, sans-serif;
+	text-align:justify;
+	color: #666B6C;
+	line-height:13px;
+	font-size:8pt;
+	letter-spacing:1px;
+	margin:0;
+	font-style:italic;
+}
+.box1 p small {
+	font-size:8pt;
+	color:black;
+	font-weight:500;
+}
+.box1 a {
+	text-decoration:none;
+}
+.box1 h5 {
+	font-family:"ProximaNova", "Helvetica Neue", Arial, sans-serif;
+	text-align:left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size:12pt;
+	font-weight:500;
+	margin:0;
+	color:black;
+}
+.box1 h4 {
+	text-align:left;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	font-size:10pt;
+	font-weight: 900;
+	margin:0;
+}
+.box1 h4 a {
+	color: black;
+}
+.detail {
+	font: Arial, Helvetica, sans-serif 8pt;
+	font-weight: 900;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	clear:both;
+}
+.detail a {
+	font: Arial, Helvetica, sans-serif 8pt #155f83;
+	font-weight: 900;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	clear:both;
+	font-color: 
+}
+.detail a {
+ font-size: 8pt;
+}
+.box2 {
+	border-bottom: rgb(156,31,46) dotted 1px;
+	height: 150px;
+}
+.box2 a {
+	color: black;
+	font:  "ProximaNova", "Helvetica Neue", Arial, sans-serif;
+	clear:both;
+	font-weight:900;
+	font-style: normal;
+	font-size: 8pt;
+}
+.box2 small {
+	font-style:italic;
+}
+.box2 p {
+	font-family:"ProximaNova", "Helvetica Neue", Arial, sans-serif;
+	text-align:justify;
+	color: #666B6C;
+	line-height:13px;
+	font-size:8pt;
+	letter-spacing:1px;
+	margin:0;
+	font-style:normal;
+}
+.box2 a {
+	text-decoration:none;
+}
+.box2 h5 {
+	font-family:"ProximaNova", "Helvetica Neue", Arial, sans-serif;
+	text-align:left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size:12pt;
+	font-weight:500;
+	margin:0;
+	color:black;
+}
+box2 img {
+	float: left;
+	width: 100px;
+}
+.imagebox2 {
+	display: block;
+	float: left;
+	width: 175px;
+}
+.imagebox2 img {
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+.textbox2{
+	display: block;
+	float: left;
+	width: 450px;
+	text-align: left;
+	margin-left: 15px;
+
+}
+.textbox2 a.detail{
+ color: #155f83;
+
+}
+.border {
+	padding-top:10px;
+
+}
+.box3 {
+	height: 30px;
 }
