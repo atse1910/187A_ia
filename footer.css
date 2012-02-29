@@ -167,7 +167,7 @@
 	overflow: hidden;
 }
 .footercol4 {
-	width: 180px;
+	width: 195px;
 	margin-left: 5px;
 	margin-top: 2px;
 	display: block;
@@ -176,4 +176,25 @@
 }
 .valign {
 	vertical-align: bottom;
+}
+#copyright {
+	border-top: solid 3px black;
+	display: block;
+	background: black;
+	clear: both;
+	text-align:center;
+	line-height: 10pt;
+	margin-left: auto;
+	margin-right: auto;
+	word-wrap:break-word;
+	padding-bottom: 4px;
+	line-height: 14pt;;
+	font-size: 8pt;
+}
+#copyright a {
+color: white;
+text-decoration: underline;
+}
+#copyright a:hover,  #copyright a:focus{
+color: gray;
 }

@@ -340,6 +340,7 @@ background: #ddd9be; /* Firefox */
 	transition:background 0.5s ease-out;
 	text-shadow:0 0 2px #000, 0 0 4px #000, 0 0 6px #000, 0 0 8px #000;
 }
+/*
 #affiliates ul li#lib {
 	height:57px;
 	width:225px;
@@ -398,7 +399,7 @@ background: #ddd9be; /* Firefox */
 	padding-top:19px;
 	margin-top:1px;
 	background:#767676;
-}
+}*/
 .box1 {
 	display:inline-block;
 	padding-top:20px;

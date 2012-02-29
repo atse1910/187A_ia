@@ -1,16 +1,15 @@
-#nav ul ul li a:link, #nav ul ul li a:visited{
+#nav ul ul li a:link, #nav ul ul li a:visited {
 	border-left: solid white 1px;
 	border-right: solid white 1px;
 	border-bottom: dotted #FFFFFF 1px;
-	}
-
+}
 #nav li li a {
 	clear:both;
 	border-left: solid white 1px;
 	border-right: solid white 1px;
-	border-bottom: dotted #FFFFFF 1px; 	
+	border-bottom: dotted #FFFFFF 1px;
 }
-#nav li li a:link, #nav li li a:visited{ /* Master Controls of Sub Menu Color, Size and Font  NON-HOVER*/
+#nav li li a:link, #nav li li a:visited { /* Master Controls of Sub Menu Color, Size and Font  NON-HOVER*/
 	width:150px;
 	float:none;
 	margin:0;
@@ -19,58 +18,185 @@
 	font-weight:normal;
 	color: white;
 	background-color: #991e21;
-
 	border-bottom: dotted #FFFFFF 1px;
 	text-align: left;
-	}
-	
-#nav li li a:hover{
+}
+#nav li li a:hover {
 	color:#982216;
 	background-color:#F8F8F8;
 	border-right: solid 1px #990000;
-	}
-
-#nav ul li ul{
+}
+#nav ul li ul {
 	z-index:9999;
 	position:absolute;
 	left:-999em;
 	height:auto;
 	width:170px;
-	
-	}
+}
 .navsubborder {
 	border-bottom: dotted 1px white;
 	clear: both;
 	text-align: left;
 }
-.navsubborder a:hover{
+.navsubborder a:hover {
 	border-bottom: solid 1px maroon;
 	clear: both;
 	text-align: left;
 }
-	
-	
 /* Master Control for Sub Menu Border Size */
 
 
 
-#nav ul ul a{width:140px;}
-
-#nav li:hover ul{left:auto;}
-
-#nav li:hover{position:static;}
-
-#nav li.last{margin-right:0;}
-
-weathertext{ position:relative; top: -23px; left: 35px; font-size:10pt;}
-
-weathericon{ left: -22px; top: -5px; position: relative;}
-
-#search input#go{
+#nav ul ul a {
+	width:140px;
+}
+#nav li:hover ul {
+	left:auto;
+}
+#nav li:hover {
+	position:static;
+}
+#nav li.last {
+	margin-right:0;
+}
+weathertext {
+	position:relative;
+	top: -23px;
+	left: 35px;
+	font-size:10pt;
+}
+weathericon {
+	left: -22px;
+	top: -5px;
+	position: relative;
+}
+#search input#go {
 	display:block;
 	float:right;
 	width:auto;
 	height:auto;
 	margin:0;
 	padding:4px;
-	}
+}
+#arena {
+	height: 58px;
+	width: 800px;
+	dsplay: block;
+	list-style-type: none;
+	padding-top: 27px;
+	text-align:center;
+	margin-left: -30px;
+}
+#arena ul li {
+	list-style: none;
+	float: left;
+	display: inline-block;
+}
+#arena ul li a {
+	display: block;
+	color: #fff;
+	text-transform:uppercase;
+letter-spacing: .1em -webkit-transition:background 0.5s ease-in;
+	-moz-transition:background 0.5s ease-in;
+	-o-transition:background 0.5s ease-in;
+	transition:background 0.5s ease-in;
+}
+#arena ul li a:hover span em, #arena ul li a:focus span em {
+	position: absolute;
+	z-index: 3000;
+	top: 0px;
+	left: 100px;
+	padding: 100px;
+	color: #000;
+	font-style: normal;
+}
+#arena ul li#lib a, #affiliates ul li#acad a, #arena ul li#research a {
+	font: 8pt 'ProximaNova-Semibold', 'Helvetica Neue', Helvetica, Arial, sans-serif, bold;
+	-moz-font-feature-settings:'liga=0';
+}
+#arena ul li a:hover, #arena ul li a:focus {
+	text-decoration:none;
+	background:transparent!important;
+	-webkit-transition:background 0.5s ease-out;
+	-moz-transition:background 0.5s ease-out;
+	-o-transition:background 0.5s ease-out;
+	transition:background 0.5s ease-out;
+	text-shadow:0 0 2px #000, 0 0 4px #000, 0 0 6px #000, 0 0 8px #000;
+}
+#arena ul li#lib {
+	height:57px;
+	width: 170px;
+	float:left;
+	background:transparent url(images/navigation2/library.png) 0 0 no-repeat;
+}
+/* The width and height shrinks the background color */
+#arena ul li#lib a {
+	height:13px;
+	width:80px;
+	text-align:left;
+	padding:34px 10px 10px 0;
+	margin-left:0x;
+	background:#8A9D45;
+	float:none;
+	text-indent: 3px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10pt;
+}
+
+/* The width and height shrinks the background color */
+#arena ul li#acad a {
+	height:13px;
+	width:100px;
+	text-align:left;
+	padding:34px 10px 10px 0;
+	margin-left:0x;
+	background:#155f83;
+	float:none;
+	text-indent: 3px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10pt;
+}
+#arena ul li#acad {
+	height:57px;
+	width: 170px;
+	float:left;
+	background:transparent url(images/navigation2/academics.png) 0 0 no-repeat;
+}
+/* The width and height shrinks the background color */
+#arena ul li#research a {
+	height:13px;
+	width:80px;
+	text-align:left;
+	padding:34px 10px 10px 0;
+	margin-left:0x;
+	background:#350e20;
+	float:none;
+	text-indent: 3px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10pt;
+}
+#arena ul li#research {
+	height:57px;
+	width: 131px;
+	float:left;
+	background:transparent url(images/navigation2/research.png) 0 0 no-repeat;
+}
+/* The width and height shrinks the background color */
+#arena ul li#press a {
+	height:13px;
+	width:80px;
+	text-align:left;
+	padding:34px 10px 10px 0;
+	margin-left:0x;
+	background:#58593f;
+	float:none;
+	text-indent: 3px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10pt;
+}
+#arena ul li#press {
+	height:57px;
+	width: 160px;
+	float:left;
+	background:transparent url(images/navigation2/press.png) 0 0 no-repeat;
+}
