@@ -4,6 +4,7 @@
 @import url(navigation.css);
 @import url(content.css);
 @import url(footer.css);
+@import url(page.css);
 
 body {
   margin: 0;
