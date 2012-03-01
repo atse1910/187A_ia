@@ -13,16 +13,43 @@ body {
 	margin: 0pt;
 	background-color: #1E1E1E;
 }
-table {
+#container #text table {
 	border: 1px black solid;
 	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100;
+	width: 940px;
+}
+table, td, tr, {
+	border: 1px black solid;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 940px;
+	word-wrap: break-word;
 }
 td {
 	padding: 4px 4px 4px 4px;
 }
+.tablepadding {
+		padding-bottom: 100px;
+		display: block;
+		
+}
+.h0{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 22pt;
+	text-align: center;
+	padding-top: 70;
+	display: block;
+}
 h1 {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 16pt;
+	display: block;
+	padding-left: 20px;
 }
 #splashcontainer {
 	width: 100%;
@@ -36,7 +63,7 @@ h1 {
 	display: block;
 }
 #container {
-	width: 100%;
+	width: 80%;
 	position: relative;
 	top: -20px;
 	color: black;
@@ -108,12 +135,14 @@ pdading-left: 20px;
 	height: 30px;
 	vertical-align: middle;
 }
-
+#footer{
+	position:relative;
+	top: -20px;
+}
 #footer, #footer a {
 	background: black;
 	height: 40px;
 	text-align: center;
-	margin-top: -35px;
 	color: white;
 	font-size: 8pt;
 	clear:both;
@@ -129,3 +158,27 @@ pdading-left: 20px;
 #splash img:hover, #splash a:hover {
 	opacity: .9;
 }
+.notes {
+	margin-left: auto;
+		margin-right: auto;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10pt;
+	display: block;
+	width: 920px;
+	clear:both;
+	text-align:justify;
+}
+.notes p { font-family: Georgia, "Times New Roman", Times, serif; font-size: 10pt; text-indent: 50px;}
+.notes small { font-family: verdana; font-size: 8pt;}
+
+td .center {
+	text-align: center;
+	clear: both;
+}
+td {
+	width:200px;
+}
+td li{ 
+ margin-left: -15px;
+ list-style-type: square ;
+ }
